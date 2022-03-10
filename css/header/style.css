@@ -43,11 +43,13 @@
 }
 
 .header--options .search .input--search {
+  color: var(--color--secondary);
   background-color: var(--color--primary);
   border: 2px solid var(--color--primary);
 }
 
 .header--options .search .input--search:focus {
+  color: var(--color--primary);
   background-color: var(--background--primary);
   transition: all 0.3s;
 }
