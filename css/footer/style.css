@@ -1,0 +1,89 @@
+.footer {
+  background: url("../../images/footer--image.jpeg") no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 10rem 0;
+}
+
+.footer--options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer--subcribe,
+.footer--contact,
+.footer--report {
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  height: 245px;
+}
+
+.footer--subcribe:hover,
+.footer--subcribe:active,
+.footer--contact:hover,
+.footer--contact:active,
+.footer--report:hover,
+.footer--report:active {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.9),
+    0 6px 20px 0 rgba(255, 255, 255, 0.91);
+  transition: all 0.3s;
+}
+
+.footer--subcribe p {
+  font-size: 1.7rem;
+  word-spacing: 5px;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.footer--subcribe input {
+  color: var(--color--secondary);
+  border: 2px solid var(--color--third);
+  background-color: var(--color--third);
+}
+
+.footer--subcribe input:focus {
+  color: var(--color--third);
+  background-color: var(--background--primary);
+  transition: all 0.3s;
+}
+
+.subcribe--social {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.subcribe--social li a i {
+  font-size: 2rem;
+  margin-right: 3rem;
+}
+
+.footer--report {
+  font-size: 1.6rem;
+  line-height: 2.9rem;
+  text-align: justify;
+}
+
+.footer--report span {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 4;
+  text-align: center;
+}
+
+.footer--report::first-letter {
+  font-size: 3rem;
+  color: red;
+}
+
+.footer--contact ul li {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.footer--contact ul li a {
+  font-size: 1.5rem;
+}
