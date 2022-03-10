@@ -5,32 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;1,100;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/globalStyle.css">
+    <link rel="stylesheet" href="../../css/header/style.css">
+    <link rel="stylesheet" href="../../css/footer/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HTML T-Academy</title>
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <a class="header--logo" href="../../pages/index.html"><img src="../../images/Logo-academy.png" alt="logo-academy" ></a>
-      <nav class="header--menu">
-        <ul>
-          <li><a href="../../pages/reactjs/reactjs.html">REACTJS</a></li>
-          <li><a href="../../pages/javascript/javascript.html">JAVASCRIPT</a></li>
-          <li><a href="../../pages/css/css.html">CSS</a></li>
-          <li><a href="../../pages/html/html.html">HTML</a></li>
-        </ul>
-      </nav>
-      <div class="header--options">
-        <form action="#" class="search">
-          <input type="search">
-          <button type="submit"><i></i></button>ß
-        </form>
-        <a class="btn btn--secondary" href="../../pages/login/signIn.html">Sign In</a>
-        <a class="btn btn--secondary" href="../../pages/login/signUp.html">Sign Up</a>
+    <div class="container-fluid">
+      <div class="header--wrapper"> 
+        <a class="header--logo col-3" href="../../pages/index.html"><img src="../../images/Logo-academy.png" alt="logo-academy" ></a>
+        <nav class="header--menu col-5">
+          <ul>
+              <li><a href="../../pages/reactjs/reactjs.html">REACTJS</a></li>
+              <li><a href="../../pages/javascript/javascript.html">JAVASCRIPT</a></li>
+              <li><a href="../../pages/css/css.html">CSS</a></li>
+              <li><a href="../../pages/html/html.html">HTML</a></li>
+          </ul>
+        </nav>
+        <div class="header--options col-4">
+          <form action="#" class="search">
+            <input class="input input--search" type="search">
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
+          <a class="btn btn--primary" href="../../pages/login/signIn.html">Sign In</a>
+          <a class="btn btn--secondary" href="../../pages/login/signUp.html">Sign Up</a>
+        </div>
       </div>
     </div>
   </header>
-  <aside class="sidebar">
+  <!-- <aside class="sidebar">
     <div class="container">
       <ol>
         <li><a href="">html1</a></li>
@@ -54,35 +63,33 @@
         </ol>
       </article>
     </div>
-  </main>
+  </main> -->
   <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
       <div class="footer--options">
-        <div class="footer--subcribe">
+        <div class="footer--subcribe col-3 ">
           <a href="../../pages/index.html" class="footer--logo"><img src="../../images/Logo-academy.png" alt="footer logo"></a>
-          <p class="subcribe--subtitle"></p>
+          <p class="subcribe--subtitle">Subscribe to follow</p>
           <form action="#">
-            <input type="email">
+            <input class="input" type="email">
             <button type="submit" class="btn btn--secondary">Submit</button>
           </form>
+          <ul class="subcribe--social">
+            <li><a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
         </div>
-        <div class="footer--contact">
-          <h3>Contact</h3>
+        <p class="footer--report col-5"> T-Academy is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. <span> Copyright 2022 by Thong Doan. All Rights Reserved.</span> </p>
+        <div class="footer--contact col-3">
+          <h4 class="title--h4">Contact</h4>
           <ul>
             <li>Email: <a href="#">ngocthong494@gmail.com</a></li>
             <li>Address: <a href="#">Da Nang - Viet Nam</a></li>
             <li>Telephone number: <a href="#">0123456789</a></li>
           </ul>
         </div>
-        <div class="footer--social">
-          <ul>
-            <li><a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
       </div>
-      <p class="footer--copyright">Copyright 1999-2022 by Refsnes Data. All Rights Reserved.<a href="">T-Academy blog</a> is Powered by Thong Doan</p>
     </div>
   </footer>
 </body>
