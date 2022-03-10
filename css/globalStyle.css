@@ -40,15 +40,26 @@
 /* variable color */
 
 :root {
-  --primary: #fbfff1;
-  --secondary: #03043a;
-  --btnPrimary: #0b0ec1;
-  --btnSecondary: #098665;
+  --background--primary: #f1f4e1;
+  --background--secondary: #a3a3b8;
+  --background--third: #c3cdb7;
+  --background--fourth: #ceae64;
+  --background--fiveth: #6f96ae;
+
+  --color--primary: #27233a;
+  --color--secondary: #ebebeb;
+  --color--third: #3d40f5;
+
+  --btnPrimary: #6466f7;
+  --btnSecondary: #0cac81;
+
+  --bgr--table--th: #86466c;
+  --bgr--table--td: #b26c96;
 }
 
 /* row and container */
 
-.row {
+/* .row {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -61,16 +72,99 @@
 
 .row:after {
   clear: both;
+} */
+
+.container-fluid {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
+  width: 83.33%;
+  margin: 0 auto;
+}
+
+/* body style */
+
+body {
+  color: var(--color--primary);
+  background-color: var(--background--primary);
 }
 
 /* button style */
 
 .btn {
-  padding: 8px;
-  border-radius: 8px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.btn--primary {
+  color: var(--background--primary);
+  background-color: var(--btnPrimary);
+  border: 2px solid var(--btnPrimary);
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  background-color: var(--background--primary);
+  color: var(--btnPrimary);
+  transition: all 0.3s;
+}
+
+.btn--secondary {
+  color: var(--background--primary);
+  background-color: var(--btnSecondary);
+  border: 2px solid var(--btnSecondary);
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+  background-color: var(--background--primary);
+  color: var(--btnSecondary);
+  transition: all 0.3s;
+}
+
+/* input style */
+.input {
+  padding: 6px 9px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+/* banner */
+
+.banner {
+  height: 600px;
+  color: var(--color--secondary);
+  padding: 20rem 0;
+}
+
+/* title */
+
+.title--h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sub--title--h1 {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1.9rem;
+  text-align: center;
+  word-spacing: 5px;
+}
+
+.title--h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.title--h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
 }

@@ -9,111 +9,120 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;1,100;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/globalStyle.css">
+    <link rel="stylesheet" href="../css/header/style.css">
+    <link rel="stylesheet" href="../css/main/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>T-Academy Blog</title>
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <a class="header--logo" href="../pages/index.html"><img src="../images/Logo-academy.png" alt="logo-academy" ></a>
-      <nav class="header--menu">
-        <ul>
-            <li><a href="../pages/reactjs/reactjs.html">REACTJS</a></li>
-            <li><a href="../pages/javascript/javascript.html">JAVASCRIPT</a></li>
-            <li><a href="../pages/css/css.html">CSS</a></li>
-            <li><a href="../pages/html/html.html">HTML</a></li>
-        </ul>
-      </nav>
-      <div class="header--options">
-        <form action="#" class="search">
-          <input type="search">
-          <button type="submit"><i></i></button>
-        </form>
-        <a class="btn btn--primary" href="../pages/login/signIn.html">Sign In</a>
-        <a class="btn btn--secondary" href="../pages/login/signUp.html">Sign Up</a>
+    <div class="container-fluid">
+      <div class="header--wrapper"> 
+        <a class="header--logo col-3" href="../pages/index.html"><img src="../images/Logo-academy.png" alt="logo-academy" ></a>
+        <nav class="header--menu col-5">
+          <ul>
+              <li><a href="../pages/reactjs/reactjs.html">REACTJS</a></li>
+              <li><a href="../pages/javascript/javascript.html">JAVASCRIPT</a></li>
+              <li><a href="../pages/css/css.html">CSS</a></li>
+              <li><a href="../pages/html/html.html">HTML</a></li>
+          </ul>
+        </nav>
+        <div class="header--options col-4">
+          <form action="#" class="search">
+            <input class="input input--search" type="search">
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
+          <a class="btn btn--primary" href="../pages/login/signIn.html">Sign In</a>
+          <a class="btn btn--secondary" href="../pages/login/signUp.html">Sign Up</a>
+        </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <section class="banner">
-      <div class="container">
-        <h1 class="banner--title">Learn basic front-end code with T-academy</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa nobis. Aut cum ipsa dolorum quas veniam rerum reiciendis doloribus, voluptatum est ea harum modi doloremque nemo labore amet velit.</p>
+    <section class="banner home--banner">
+      <div class="container-fluid">
+        <h1 class="title--h1">Learn basic front-end code with T-academy</h1>
+        <p class="sub--title--h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa nobis. Aut cum ipsa dolorum quas veniam rerum reiciendis doloribus, voluptatum est ea harum modi doloremque nemo labore amet velit.</p>
     </div>
     </section>
     <section class="technologies">
       <div class="container">
+        <h2 class="title--h2">Technologies</h2>
         <ul class="technologies--list">
-          <li class="technologies--item">
-            <div class="technologies--item__content">
-              <h2><a href="../pages/html/html.html">HTML</a></h2>
-              <p>What is html...</p>
-              <a class="btn btn--technology" href="../pages/html/html.html">learn more</a>
+          <li class="technology--item item--html">
+            <div class="technology--item__content col-6">
+              <a class="title--h3" href="../pages/html/html.html">HTML</a>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore eum at ipsam ea qui culpa perferendis magni quidem non quo. Repellat hic reiciendis debitis voluptatum nobis consequuntur ea nam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia dolores consequatur perferendis nobis nulla consectetur. Possimus, aliquam? Modi dolor deserunt atque similique itaque, odio, natus placeat assumenda voluptas nesciunt temporibus!</p>
+              <a class="btn btn--technology" href="../pages/html/html.html">Read more</a>
             </div>
-            <img src="#" alt="html image" class="technologies--item__image"></img>
+            <a href="../pages/html/html.html" class="col-6"><img src="../images/html--image.jpeg" alt="html image" class="technology--item__image"></img></a>
+            
           </li>
-          <li class="technologies--item">
-            <div class="technologies--item__content">
-              <h2><a href="../pages/css/css.html">CSS</a></h2>
-              <p>What is css...</p>
-              <a class="btn btn--technology" href="../pages/css/css.html">learn more</a>
+          <li class="technology--item item--css">
+            <div class="technology--item__content col-6">
+              <a class="title--h3" href="../pages/css/css.html">CSS</a>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore eum at ipsam ea qui culpa perferendis magni quidem non quo. Repellat hic reiciendis debitis voluptatum nobis consequuntur ea nam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia dolores consequatur perferendis nobis nulla consectetur. Possimus, aliquam? Modi dolor deserunt atque similique itaque, odio, natus placeat assumenda voluptas nesciunt temporibus!</p>
+              <a class="btn btn--technology" href="../pages/css/css.html">Read more</a>
             </div>
-            <img src="#" alt="css image" class="technologies--item__image"></img>
+            <a href="../pages/css/css.html" class="col-6"><img src="../images/css--image.jpeg" alt="css image" class="technology--item__image"></img></a>
           </li>
-          <li class="technologies--item">
-            <div class="technologies--item__content">
-              <h2><a href="../pages/javascript/javascript.html">JAVASCRIPT</a></h2>
-              <p>What is javascript...</p>
-              <a class="btn btn--technology" href="../pages/javascript/javascript.html">learn more</a>
+          <li class="technology--item item--javascript">
+            <div class="technology--item__content col-6">
+              <a class="title--h3" href="../pages/javascript/javascript.html">JAVASCRIPT</a>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore eum at ipsam ea qui culpa perferendis magni quidem non quo. Repellat hic reiciendis debitis voluptatum nobis consequuntur ea nam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia dolores consequatur perferendis nobis nulla consectetur. Possimus, aliquam? Modi dolor deserunt atque similique itaque, odio, natus placeat assumenda voluptas nesciunt temporibus!</p>
+              <a class="btn btn--technology" href="../pages/javascript/javascript.html">Read more</a>
             </div>
-            <img src="#" alt="javascript image" class="technologies--item__image"></img>
+            <a href="../pages/javascript/javascript.html" class="col-6"><img src="../images/javascript--image.jpeg" alt="javascript image" class="technology--item__image"></img></a>
           </li>
-          <li class="technologies--item">
-            <div class="technologies--item__content">
-              <h2><a href="../pages/reactjs/reactjs.html">REACTJS</a></h2>
-              <p>What is reactjs...</p>
-              <a class="btn btn--technology" href="../pages/reactjs/reactjs.html">learn more</a>
+          <li class="technology--item item--reactjs">
+            <div class="technology--item__content col-6">
+              <a class="title--h3" href="../pages/reactjs/reactjs.html">REACTJS</a>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore eum at ipsam ea qui culpa perferendis magni quidem non quo. Repellat hic reiciendis debitis voluptatum nobis consequuntur ea nam quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia dolores consequatur perferendis nobis nulla consectetur. Possimus, aliquam? Modi dolor deserunt atque similique itaque, odio, natus placeat assumenda voluptas nesciunt temporibus!</p>
+              <a class="btn btn--technology" href="../pages/reactjs/reactjs.html">Read more</a>
             </div>
-            <img src="#" alt="reactjs image" class="technologies--item__image"></img>
+            <a href="../pages/reactjs/reactjs.html" class="col-6"><img src="../images/reactjs--image.jpeg" alt="reactjs image" class="technology--item__image"></img></a>
           </li>
         </ul>
       </div>
     </section>
     <section class="learning--path">
       <div class="container">
-        <h2 class="learning--path__title">Learning path for beginners</h2>
-        <table class="learning--path__table" style="width:100%">
-          <tr>
-            <th>Technologies</th>
-            <th>Study Time</th>
-            <th>Project</th>
-          </tr>
-          <tr>
-            <td>HTML</td>
-            <td>5 hour</td>
-            <td>Create a blog page in html</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>25 hour</td>
-            <td>Styling the blog page</td>
-          </tr>
-          <tr>
-            <td>JAVASCRIPT</td>
-            <td>50 hour</td>
-            <td>Add functionality to the blog page</td>
-          </tr>
-          <tr>
-            <td>REACTJS</td>
-            <td>70 hour</td>
-            <td>Create an e-commerce site</td>
-          </tr>
-        </table>
+        <h2 class="title--h2">Learning path for beginners</h2>
+        <div class="wrapper--table">
+          <table class="learning--path__table">
+            <tr>
+              <th>Technologies</th>
+              <th>Study Time</th>
+              <th>Project</th>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>5 hour</td>
+              <td>Create a blog page in html</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>25 hour</td>
+              <td>Styling the blog page</td>
+            </tr>
+            <tr>
+              <td>JAVASCRIPT</td>
+              <td>50 hour</td>
+              <td>Add functionality to the blog page</td>
+            </tr>
+            <tr>
+              <td class="border--radius--left">REACTJS</td>
+              <td>70 hour</td>
+              <td class="border--radius--right">Create an e-commerce site</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
       <div class="footer--options">
         <div class="footer--subcribe">
           <a href="../pages/index.html" class="footer--logo"><img src="../images/Logo-academy.png" alt="footer logo"></a>
