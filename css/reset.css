@@ -2,11 +2,19 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  white-space: nowrap;
 }
 
 ol,
@@ -17,4 +25,16 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+i {
+  padding: 2px;
 }

@@ -1,0 +1,171 @@
+.home--banner {
+  background: url("../../images/home-banner.jpeg") no-repeat fixed;
+  background-size: cover;
+}
+
+.technologies {
+  margin: 4rem 0;
+}
+
+.technology--item {
+  margin-top: 4rem;
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+}
+
+.technology--item.item--css,
+.technology--item.item--reactjs {
+  flex-direction: row-reverse;
+}
+
+.technology--item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: -2px;
+  transition: all 0.3s;
+}
+
+.technology--item__content {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.technology--item__content > p {
+  text-align: justify;
+  line-height: 3rem;
+  font-size: 1.7rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.technology--item__content > .btn--technology {
+  width: 120px;
+  text-align: center;
+  color: var(--color--secondary);
+  background-color: var(--btnPrimary);
+  border: 2px solid var(--btnPrimary);
+  transition: all 0.3s;
+}
+
+.item--html .technology--item__content > .btn--technology:hover,
+.item--html .technology--item__content > .btn--technology:focus {
+  background-color: var(--background--secondary);
+}
+
+.item--css .technology--item__content > .btn--technology:hover,
+.item--css .technology--item__content > .btn--technology:focus {
+  background-color: var(--background--third);
+}
+
+.item--javascript .technology--item__content > .btn--technology:hover,
+.item--javascript .technology--item__content > .btn--technology:focus {
+  background-color: var(--background--fourth);
+}
+
+.item--reactjs .technology--item__content > .btn--technology:hover,
+.item--reactjs .technology--item__content > .btn--technology:focus {
+  background-color: var(--background--fiveth);
+}
+
+.technology--item__content .title--h3 {
+  color: var(--color--primary);
+}
+
+.technology--item__content .title--h3:visited {
+  color: var(--color--third);
+}
+
+.technology--item__content .title--h3:hover,
+.technology--item__content .title--h3:active {
+  color: var(--color--secondary);
+  text-shadow: 2px 2px 4px #000000;
+  transition: all 0.3s;
+}
+
+.item--css > .technology--item__content > .title--h3,
+.item--reactjs > .technology--item__content > .title--h3,
+.item--css > .technology--item__content > .btn--technology,
+.item--reactjs > .technology--item__content > .btn--technology {
+  align-self: flex-end;
+}
+
+.technology--item__image {
+  height: 100%;
+}
+
+.item--html .technology--item__image,
+.item--javascript .technology--item__image {
+  border-radius: 0 8px 8px 0;
+}
+
+.item--css .technology--item__image,
+.item--reactjs .technology--item__image {
+  border-radius: 8px 0 0 8px;
+}
+
+.item--html {
+  background-color: var(--background--secondary);
+}
+
+.item--css {
+  background-color: var(--background--third);
+}
+
+.item--javascript {
+  background-color: var(--background--fourth);
+}
+
+.item--reactjs {
+  background-color: var(--background--fiveth);
+}
+
+/* styled leaning--path */
+
+.learning--path__table {
+  margin: 4rem 0;
+  color: var(--color--secondary);
+}
+
+.learning--path__table th {
+  background-color: var(--bgr--table--th);
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: start;
+
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.learning--path__table th:first-child {
+  border-radius: 6px 0 0 0;
+}
+
+.learning--path__table th:last-child {
+  border-radius: 0 6px 0 0;
+}
+
+.learning--path__table td {
+  background-color: var(--bgr--table--td);
+  padding: 1rem;
+  font-size: 1.7rem;
+
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.learning--path__table td.border--radius--left {
+  border-radius: 0 0 0 6px;
+}
+
+.learning--path__table td.border--radius--right {
+  border-radius: 0 0 6px 0;
+}
+
+.wrapper--table {
+  overflow-x: auto;
+}
